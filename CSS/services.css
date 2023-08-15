@@ -90,15 +90,23 @@ Service Section
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.right-services a {
+  text-decoration: none;
+  display: flex;
+}
 .single-rs {
   background: var(--primaryColor);
-  width: 61%;
+  width: 120px;
   display: grid;
   text-align: center;
   align-items: center;
   padding: 40px;
   color: white;
   cursor: pointer;
+  transition: var(--transition);
+}
+.single-rs:hover {
+  transform: scaleY(1.1) translateY(-20%);
 }
 .single-rs h6 {
   font-size: 12px;
@@ -142,6 +150,30 @@ How Section
 }
 .right-how img {
   width: 100%;
+}
+.how-section2 {
+  display: grid;
+  padding: 0 30px;
+  padding-bottom: 150px;
+  gap: 30px;
+}
+.left-how2 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left-how2 img {
+  width: 100%;
+}
+.right-how2 {
+  display: grid;
+  gap: 35px;
+}
+.right-how2 p {
+  opacity: 60%;
+}
+.how-to-btn {
+  width: 170px;
 }
 /* 
 ==========
@@ -191,8 +223,17 @@ Media query
     padding: 50px 150px;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    padding-top: 100px;
   }
   .left-how {
     width: 85%;
+  }
+  .how-section2 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 150px;
+    padding-bottom: 400px;
+  }
+  .right-how2 {
+    width: 90%;
   }
 }
