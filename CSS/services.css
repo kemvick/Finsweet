@@ -1,0 +1,198 @@
+/* Global variable */
+:root {
+  --transition: 400ms ease-in-out all;
+  --borderRadius: 2px;
+  --boxShadow: 1px 1px 5px grey;
+  /* Colors */
+  --primaryColor: #ff6433;
+  --secondaryColor: #661ce7;
+  --mintColor: #00d289;
+  --blackColor: #1e1b1b;
+  --greyColor: #e2e6e9;
+  --lightgreyColor: #f2f2f2;
+  --greyColor1: #939191;
+  /* font */
+  --bodyFont: "Manrope", sans-serif;
+}
+/* 
+=========
+ service Hero
+========
+*/
+.service-hero {
+  padding: 40px 30px;
+  height: 500px;
+}
+.service-hero-img {
+  width: 100%;
+}
+.sub-hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.our-services {
+  position: absolute;
+  display: grid;
+  text-align: center;
+  gap: 30px;
+  background: var(--blackColor);
+  padding: 40px;
+  color: white;
+  top: 240px;
+  width: 71%;
+  left: 30px;
+}
+.service-btn {
+  width: 170px;
+  margin: auto;
+}
+.services-section {
+  background: var(--greyColor);
+}
+/* 
+==========
+Service Section
+==========
+*/
+.services-section {
+  padding: 40px 30px;
+  display: grid;
+  gap: 20px;
+}
+.left-services {
+  display: grid;
+  gap: 20px;
+  background: white;
+  padding: 30px;
+}
+.left-services p {
+  opacity: 60%;
+}
+.left-services img {
+  width: 100%;
+}
+.see-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.see-details img {
+  width: 20%;
+}
+.see-details h4 {
+  font-size: 14px;
+}
+.right-services {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.single-rs {
+  background: var(--primaryColor);
+  width: 61%;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  cursor: pointer;
+}
+.single-rs h6 {
+  font-size: 12px;
+}
+.single-rs img {
+  width: 30%;
+  margin: auto;
+  color: white;
+  margin-bottom: 10px;
+}
+.special-rs {
+  background: white;
+  color: var(--blackColor);
+}
+/* 
+==========
+How Section
+==========
+*/
+.how-section1 {
+  display: grid;
+  padding: 40px 30px;
+  gap: 30px;
+}
+.left-how {
+  display: grid;
+  gap: 35px;
+}
+.left-row {
+  display: flex;
+  gap: 15px;
+}
+.left-row img {
+  width: 10%;
+  height: 70%;
+}
+.right-how {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.right-how img {
+  width: 100%;
+}
+/* 
+==========
+Media query
+==========
+*/
+@media screen and (min-width: 992px) {
+  .service-hero {
+    padding: 150px;
+  }
+  .service-hero-img {
+    width: 55%;
+  }
+  .sub-hero {
+    flex-direction: row;
+  }
+  .our-services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    left: 480px;
+    height: 40.2%;
+    top: 234px;
+    padding: 60px 50px;
+    text-align: left;
+  }
+  .our-services p {
+    width: 80%;
+    margin: 0;
+  }
+  .service-btn {
+    margin: 0;
+  }
+  .services-section {
+    padding: 100px 150px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .left-services {
+    gap: 40px;
+  }
+  .single-rs {
+    width: 67%;
+  }
+  .how-section1 {
+    padding: 50px 150px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .left-how {
+    width: 85%;
+  }
+}
