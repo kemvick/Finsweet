@@ -1,0 +1,63 @@
+/* Global variable */
+:root {
+  --transition: 400ms ease-in-out all;
+  --borderRadius: 2px;
+  --boxShadow: 1px 1px 5px grey;
+  /* Colors */
+  --primaryColor: #ff6433;
+  --secondaryColor: #661ce7;
+  --mintColor: #00d289;
+  --blackColor: #1e1b1b;
+  --greyColor: #e2e6e9;
+  --lightgreyColor: #f2f2f2;
+  --greyColor1: #939191;
+  /* font */
+  --bodyFont: "Manrope", sans-serif;
+}
+.contact-form {
+  background: var(--greyColor);
+}
+.get-in-touch-section {
+  padding: 40px 30px;
+}
+.get-in-touch1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.map img {
+  padding-top: 40px;
+  width: 100%;
+}
+.contact-page img {
+  width: 100%;
+}
+
+/* 
+========
+Media Query
+========
+*/
+@media screen and (min-width: 992px) {
+  .get-in-touch-section {
+    padding: 100px 150px;
+    align-items: center;
+  }
+  .get-in-touch1 {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .contact-page img {
+    padding-top: 100px;
+    margin-bottom: 0;
+  }
+  .contact-right {
+    height: 200px;
+    gap: 40px;
+  }
+  .map img {
+    padding-top: 100px;
+  }
+}

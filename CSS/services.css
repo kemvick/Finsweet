@@ -14,9 +14,6 @@
   /* font */
   --bodyFont: "Manrope", sans-serif;
 }
-body {
-  width: 480px;
-}
 /* 
 =========
  service Hero
@@ -46,6 +43,7 @@ body {
   top: 240px;
   width: 71%;
   left: 30px;
+  /* z-index: -1; */
 }
 .service-btn {
   width: 170px;
@@ -184,9 +182,6 @@ Media query
 ==========
 */
 @media screen and (min-width: 992px) {
-  body {
-    width: 100%;
-  }
   .service-hero {
     padding: 150px;
   }
