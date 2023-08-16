@@ -21,43 +21,48 @@
   /* font */
   --bodyFont: "Manrope", sans-serif;
 }
+/*
+==========
+Presets
+==========
+ */
 body {
   font-family: var(--bodyFont);
 }
 h1 {
-  font-size: 64px;
+  font-size: 50px;
 }
 h2 {
-  font-size: 58px;
+  font-size: 45px;
 }
 h3 {
-  font-size: 48px;
+  font-size: 43px;
 }
 h4 {
-  font-size: 40px;
+  font-size: 34px;
 }
 h5 {
-  font-size: 32px;
+  font-size: 18px;
 }
 h6 {
-  font-size: 20px;
+  font-size: 12px;
 }
 title {
-  font-size: 32px;
+  font-size: 20px;
 }
 .title2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 p {
   font-size: 18px;
   line-height: 31.5px;
-  font-weight: 600;
+  font-weight: 200;
 }
 .p-body2 {
   font-size: 16px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .caption {
   font-size: 12px;
@@ -103,8 +108,10 @@ header {
   align-items: center;
   height: 4rem;
   padding: 10px 30px;
+  position: fixed;
+  inset: 0;
   z-index: 999;
-  font-family: var(--bodyFont);
+  background: white;
 }
 .logo {
   width: 100px;
@@ -170,6 +177,7 @@ Page
 */
 .page {
   width: 100%;
+  margin-top: 5rem;
 }
 /* 
 ===========
@@ -292,7 +300,6 @@ Quote
   gap: 10px;
 }
 .cs-p {
-  color: var(--blackColor);
   opacity: 60%;
 }
 .icon {
@@ -662,6 +669,9 @@ Media Query
   }
   header {
     padding: 10px 150px;
+    position: fixed;
+    inset: 0;
+    background-color: white;
   }
   .nav-list {
     align-items: center;
@@ -797,10 +807,10 @@ Media Query
   }
   .contact-us {
     width: 470px;
-    left: 150px;
+    left: 153px;
     top: 0;
     align-items: center;
-    padding: 79.5px 30px !important;
+    padding: 82.5px 30px !important;
     text-align: left;
     font-size: 20px;
     gap: 1px;
@@ -872,5 +882,51 @@ Media Query
   }
   .left-in img {
     margin: 0;
+  }
+  /* 
+  =========
+  PRESET
+  ========
+  */
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 58px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 32px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  title {
+    font-size: 32px;
+  }
+  .title2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    line-height: 31.5px;
+    font-weight: 600;
+  }
+  .p-body2 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .caption {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 500;
+    opacity: 60%;
   }
 }

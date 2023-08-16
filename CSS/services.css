@@ -130,9 +130,9 @@ How Section
   display: flex;
   gap: 15px;
 }
-.left-row img {
-  width: 20%;
-  height: 50%;
+.checkmark-img {
+  width: 50px;
+  height: 50px;
 }
 .right-how {
   display: grid;
@@ -178,9 +178,6 @@ Media query
   }
   .service-hero-img {
     width: 55%;
-  }
-  .sub-hero {
-    flex-direction: row;
   }
   .our-services {
     display: flex;
