@@ -22,13 +22,13 @@
   font-size: 45px;
 }
 .service-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  padding-top: 50px;
+  gap: 100px;
 }
 
 .sidebar {
   display: grid;
-  padding-top: 50px;
   gap: 30px;
   justify-content: center;
 }
@@ -59,7 +59,7 @@
 }
 .other-icon {
   background: var(--greyColor);
-  width: 55px;
+  width: 50px;
 }
 .single-cta {
   background: white;
@@ -68,7 +68,6 @@
 .content {
   display: grid;
   gap: 25px;
-  padding-top: 40px;
 }
 .content p {
   opacity: 60%;
@@ -86,13 +85,13 @@ Media Query
     padding: 100px 150px;
   }
   .service-content {
-    padding-top: 50px;
-    justify-content: space-between;
-    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
     gap: 10px 50px;
+    align-items: flex-start;
   }
   .sidebar {
-    gap: 30px;
+    gap: 100px;
+    justify-content: left;
   }
   .other-services {
     width: 250px;
@@ -109,13 +108,7 @@ Media Query
     font-size: 15px;
   }
   .other-service2 {
-    gap: 30px;
+    gap: 70px;
     width: 300px;
-  }
-  .content {
-    padding-top: 0;
-  }
-  .content img {
-    margin-bottom: 40px;
   }
 }
