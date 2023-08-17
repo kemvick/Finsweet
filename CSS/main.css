@@ -42,7 +42,7 @@ h4 {
   font-size: 34px;
 }
 h5 {
-  font-size: 18px;
+  font-size: 25px;
 }
 h6 {
   font-size: 12px;
@@ -810,7 +810,7 @@ Media Query
     left: 153px;
     top: 0;
     align-items: center;
-    padding: 82.5px 30px !important;
+    padding: 79.5px 30px !important;
     text-align: left;
     font-size: 20px;
     gap: 1px;
@@ -916,12 +916,12 @@ Media Query
   p {
     font-size: 18px;
     line-height: 31.5px;
-    font-weight: 600;
+    font-weight: 500;
   }
   .p-body2 {
     font-size: 16px;
     line-height: 28px;
-    font-weight: 600;
+    font-weight: 400;
   }
   .caption {
     font-size: 12px;

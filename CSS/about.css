@@ -17,7 +17,7 @@
 .about-section {
   padding: 40px 30px;
   position: relative;
-  height: 650px;
+  height: 600px;
 }
 .about-section img {
   width: 100%;
@@ -29,7 +29,7 @@
   color: white;
   gap: 20px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   width: 62.6%;
   text-align: center;
 }
@@ -52,6 +52,116 @@
 .step-image {
   width: 100%;
 }
+.color-section {
+  padding: 40px 0;
+}
+.color1,
+.color2,
+.color3 {
+  position: relative;
+}
+.color1 {
+  margin-bottom: -4px;
+}
+.color3 {
+  margin-top: -4px;
+}
+.first-img,
+.second-img,
+.third-img {
+  width: 100%;
+}
+.first-img {
+  height: 300px;
+}
+.second-img {
+  height: 300px;
+}
+.third-img {
+  height: 300px;
+}
+.overlay1,
+.overlay2,
+.overlay3 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+  color: white;
+  position: absolute;
+}
+.overlay1 {
+  background: rgba(240, 60, 5, 0.79);
+  padding: 43px 50px;
+  top: 0px;
+}
+.overlay2 {
+  padding: 43px 50px;
+  background: rgba(5, 5, 5, 0.79);
+  top: 0px;
+  z-index: 1;
+}
+.overlay3 {
+  padding: 29px 50px;
+  background: rgba(102, 28, 231, 0.79);
+  top: 0px;
+  z-index: 2;
+}
+.features-section {
+  background: var(--greyColor);
+  padding: 40px 30px;
+  display: grid;
+  gap: 30px;
+}
+.features-section h4 {
+  text-align: center;
+}
+.features-bg {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 70px;
+  gap: 50px;
+  width: 40%;
+  margin: auto;
+}
+.feature1,
+.feature2,
+.feature3 {
+  flex-direction: column;
+  text-align: center;
+}
+.feature-text {
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+.feature-icon {
+  background: #eec3d2;
+  margin: auto;
+}
+.f-line {
+  border: 1px solid var(--greyColor);
+}
+.team-section {
+  padding: 40px 30px;
+  text-align: center;
+  display: grid;
+  gap: 40px;
+}
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.people img {
+  width: 200px;
+}
+.about-footer {
+  margin-bottom: -4.5px;
+}
 /* 
 =========
 Media Query
@@ -70,7 +180,7 @@ Media Query
     justify-content: center;
     flex-direction: column;
     width: 40%;
-    height: 205px;
+    height: 196px;
     left: 480px;
     top: 100px;
     padding: 96px;
@@ -81,13 +191,58 @@ Media Query
   }
   .steps-section {
     grid-template-columns: 1fr 1fr;
-    padding: 40px 150px;
+    padding: 70px 150px;
   }
   .step {
     width: 80%;
     margin-left: 0;
   }
-  .about-footer {
-    margin-bottom: 0;
+  .color3 {
+    margin-top: 0;
+  }
+  .color-section {
+    display: flex;
+    padding: 0;
+    margin-bottom: -4px;
+  }
+  .first-img,
+  .second-img,
+  .third-img {
+    height: 400px;
+  }
+  .overlay1,
+  .overlay2 {
+    padding: 95px 50px;
+  }
+  .overlay3 {
+    padding: 76.5px 50px;
+  }
+  .features-section {
+    padding: 100px 150px;
+    gap: 50px;
+  }
+  .features-bg {
+    display: flex;
+    flex-direction: row;
+
+    width: 90%;
+  }
+  .feature1,
+  .feature2,
+  .feature3 {
+    gap: 15px;
+  }
+  .feature-number {
+    gap: 50px;
+  }
+  .features-section h4 {
+    width: 60%;
+    margin: auto;
+  }
+  .team-section {
+    padding: 100px 150px;
+  }
+  .people img {
+    width: 250px;
   }
 }

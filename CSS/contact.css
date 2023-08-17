@@ -51,7 +51,7 @@ Media Query
   }
   .contact-page img {
     padding-top: 100px;
-    margin-bottom: 0;
+    margin-bottom: -4px;
   }
   .contact-right {
     height: 200px;
