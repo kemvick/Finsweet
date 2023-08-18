@@ -31,6 +31,7 @@
 }
 .contact-page img {
   width: 100%;
+  margin-bottom: -4px;
 }
 
 /* 
@@ -51,7 +52,6 @@ Media Query
   }
   .contact-page img {
     padding-top: 100px;
-    margin-bottom: -4px;
   }
   .contact-right {
     height: 200px;
